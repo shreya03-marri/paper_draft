@@ -1,0 +1,30 @@
+# NanoSpatialBench - Python dependencies (Jetson AGX Orin)
+# Install: pip install -r requirements.txt
+#
+# NO paid API packages needed — all inference is local via Ollama/vLLM
+
+# Core
+numpy>=1.24
+scipy>=1.11
+matplotlib>=3.7
+Pillow>=10.0
+requests>=2.31
+
+# Data processing
+pandas>=2.0
+tqdm>=4.65
+
+# Evaluation
+scikit-learn>=1.3
+
+# Fine-tuning (Phase 4 — install when needed)
+# peft>=0.10
+# bitsandbytes>=0.43
+# transformers>=4.40
+# datasets>=2.18
+# accelerate>=0.28
+# torch>=2.1   (pre-installed with JetPack)
+
+# Local inference engines (install ONE):
+# Ollama: curl -fsSL https://ollama.com/install.sh | sh
+# vLLM:   pip install vllm
